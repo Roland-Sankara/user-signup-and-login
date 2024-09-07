@@ -3,57 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+      <script src="https://kit.fontawesome.com/02f0423708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css" />
     <title>Signup</title>
   </head>
   <body>
-    <h1>Signup Form</h1>
-    <form>
-        <div>
-            <!-- username -->
+    <div class="main">
+      <div class="main-div">
+        <h1>Hello Friend!</h1>
+        <p>If you have an account, please continue to sign in</p>
+        <button>Login</button>
+      </div>
+      <div class="signup">
+        <h1>Create Account</h1>
+        <form action="" class="signup-form">
+          <div class="sign" id="first">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" />
+          </div>
+          <div class="sign" id="last">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="lastname" />
+          </div>
+          <div class="sign" id="user">
             <label for="username">Username</label>
-            <input id="username" type="text">
-        </div>
-
-        <div>
-            <!-- first name -->
-            <label for="firstname">FirstName</label>
-            <input id="firstname" type="text">
-        </div>
-        
-        <div>
-            <!-- last name -->
-            <label for="lastname">LastName</label>
-            <input id="lastname" type="text">
-        </div>
-        
-        <div>
-            <!-- email -->
+            <input type="text" id="username" />
+          </div>
+          <div class="sign">
             <label for="email">Email</label>
-            <input id="email" type="email">
-        </div>
+            <input type="email" id="email" />
+          </div>
 
-        <div>
-            <!-- password -->
+          <div class="sign">
+            <label for="picture">Profile picture</label>
+            <input type="text" id="picture" />
+          </div>
+          <div class="sign" id="passwordDiv">
             <label for="password">Password</label>
-            <input id="password" type="password">
-        </div>
+            <div class="input">
+              <input type="password" id="password" />
+              <i class="fa-solid fa-eye" id="open"></i>
+              <i class="fa-regular fa-eye-slash" id="close"></i>
+            </div>
 
-        <div>
-            <!-- password -->
-            <label for="picture">Your Profile Pic</label>
-            <input id="picture" type="text">
-        </div>
-
-        <div>
-            <!-- confirm password -->
+          </div>
+          <div class="sign">
             <label for="confirm-pass">Confirm Password</label>
-            <input id="confirm-pass" type="password">
-        </div>
-
-        <!-- signup-btn -->
-        <button>Signup</button>
-    </form>
+            <div class="input">
+              <input type="password" id="confirm-pass" />
+              <i class="fa-solid fa-eye" id="confirm-open"></i>
+              <i class="fa-regular fa-eye-slash" id="confirm-close"></i>
+            </div>
+          </div>
+          <button id="signup">SignUp</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./index.js"></script>
   </body>
